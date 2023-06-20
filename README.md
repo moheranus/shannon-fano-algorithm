@@ -1,5 +1,6 @@
-file:///home/moheranus/Pictures/Screenshots/Screenshot%20from%202023-06-20%2012-19-46.png
+
 # Getting Started with Create React App
+![Screenshot from 2023-06-20 12-19-46](https://github.com/moheranus/shannon-fano-algorithm/assets/61871092/a73c6cc0-b301-4a7f-92dd-f634735c2321)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
