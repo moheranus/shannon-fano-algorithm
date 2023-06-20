@@ -1,38 +1,90 @@
-.App {
-  text-align: center;
+.container {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #26292b;
+  width: 100%;
+  height: 100vh;
+  color: #fff;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.wrapper {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+}
+.formCont {
+  border: 3px solid blue;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 30px;
+}
+.formWrap {
+  display: block;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.inputs {
+  min-width: 300px;
+  height: 50px;
+  border-radius: 7px;
+  border: 0;
+  outline: auto grey;
+  padding-inline: 15px;
+  font-size: 16px;
+  transform: all 200ms;
 }
 
-.App-link {
-  color: #61dafb;
+.inputs:focus {
+  text-decoration: underline 6px;
+  box-shadow: 0 0 50px rgb(255, 255, 255);
+  border: 1px solid grey;
+}
+.shadow__btn {
+  padding: 10px 20px;
+  border: none;
+  font-size: 17px;
+  color: #fff;
+  border-radius: 7px;
+  letter-spacing: 4px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.5s;
+  transition-property: box-shadow;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.shadow__btn {
+  background: rgb(0, 140, 255);
+  box-shadow: 0 0 25px rgb(0, 140, 255);
+}
+
+.shadow__btn:hover {
+  box-shadow: 0 0 5px rgb(0, 140, 255), 0 0 25px rgb(0, 140, 255),
+    0 0 50px rgb(0, 140, 255), 0 0 100px rgb(0, 140, 255);
+}
+.lable {
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Ubuntu";
+}
+.svg {
+  margin-top: 400px;
+
+  z-index: 1;
+}
+.presentation {
+  color: black;
+  z-index: 3;
+  position: absolute;
+  bottom: 30px;
+  left: 40%;
+  font-size: 25px;
+  font-family: "Ubuntu";
+  font-weight: 700;
 }
